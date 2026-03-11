@@ -2,6 +2,8 @@
 
 PopX is a fully functional, mobile-first web application featuring a pixel-perfect, centered UI. It includes a robust authentication system using JWT (Access & Refresh tokens), form validation, and protected routing. The project is split into two distinct parts: a **React + Vite** frontend styled with **Tailwind CSS v3**, and a **Node.js + Express** backend powered by **MongoDB**.
 
+**Live Demo:** [https://educase-popx-assign.netlify.app/](https://educase-popx-assign.netlify.app/)
+
 ## Features
 
 ### Frontend (React + Vite + Tailwind CSS)

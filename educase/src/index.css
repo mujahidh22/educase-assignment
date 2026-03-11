@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    @apply h-full font-inter antialiased;
+    background: #e8e8e8;
+  }
+
+  #root {
+    @apply min-h-screen flex justify-center items-center;
+    padding: 20px 0;
+  }
+}
+
+@layer components {
+  /* Custom radio dot styling (hard to do purely in Tailwind) */
+  .radio-dot-inner {
+    @apply w-3 h-3 rounded-full bg-transparent transition-colors duration-200;
+  }
+  input[type="radio"]:checked + .radio-dot .radio-dot-inner {
+    @apply bg-primary;
+  }
+  input[type="radio"]:checked + .radio-dot {
+    @apply border-primary;
+  }
+}
